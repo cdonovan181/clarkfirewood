@@ -9,10 +9,10 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('firewood7.jpg'); /* Add the path to your background image */
+            background-image: url('background.jpg'); 
             background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-attachment: fixed; /* Ensure the background stays fixed */
         }
         .header {
             background-color: #c46e33;
@@ -91,6 +91,23 @@
             justify-content: center;
             text-align: center;
         }
+        /* Add the following CSS for the firewood images */
+        .firewood-images {
+            margin-top: 40px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .image-grid img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Style the Gallery heading to be orange */
+        .firewood-images h3 {
+            color: #c46e33;
+        }
     </style>
 </head>
 <body>
@@ -133,7 +150,21 @@
             <h3>Delivery</h3>
             <ul>
                 <li>Delivery fee: $25-50 depending on distance</li>
+                <li>Stacking is also available</li>
             </ul>
+        </div>
+        
+        <!-- Firewood Images Section -->
+        <div class="firewood-images">
+            <h3>Gallery</h3>
+            <div class="image-grid">
+                <img src="pic1.png" alt="Firewood Image 1">
+                <img src="pic2.png" alt="Firewood Image 2">
+                <img src="pic3.png" alt="Firewood Image 3">
+                <img src="pic4.png" alt="Firewood Image 4">
+                <img src="pic7.png" alt="Firewood Image 5">
+                <img src="pic6.png" alt="Firewood Image 6">
+            </div>
         </div>
     </div>
 </body>
